@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pythonapp
+spec:
+  containers:
+    - name: pythoncounterapp
+      image: jchakravarthi/python_counter_app:1.0
+      ports:
+        - containerPort: 8083
+          name: http
+          protocol: TCP
