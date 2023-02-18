@@ -6,4 +6,4 @@ COPY . /u01/app
 
 RUN pip install -r requirements.txt
 EXPOSE 8083
-CMD ["python","index.py"]
+CMD ["python","main.py"]
